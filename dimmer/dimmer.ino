@@ -15,5 +15,10 @@ void dimmer(int freq, int duty) {
 }
 
 void loop() {
-  dimmer(50, 10);
+  for(int i = 10; i <= 100; i+=10) {
+    dimmer(50, i);
+  }
+  for(int i = 100; i >= 10; i-=10) {
+    dimmer(50, i);
+  }
 }
