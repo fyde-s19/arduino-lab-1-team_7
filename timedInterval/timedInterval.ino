@@ -11,7 +11,7 @@ void timedBlink(int interval) {
 }
 
 void loop() {
-  timedBlink(1);
-  timedBlink(2);
-  timedBlink(3);
+  timedBlink(1);    //on for 1 second
+  timedBlink(2);    //on for 2 seconds
+  timedBlink(3);    //on for 3 seconds
 }
