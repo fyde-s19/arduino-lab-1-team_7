@@ -3,7 +3,7 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void dimmer(int freq, int duty) {
+void dimmer(int freq, int duty) {     //dimmer functions with constant frequency and variable duty cycle
   int period, onTime, offTime;
   period = 1000/freq;
   onTime = period * duty /100;
@@ -15,10 +15,10 @@ void dimmer(int freq, int duty) {
 }
 
 void loop() {
-  for(int i = 10; i <= 100; i+=10) {
+  for(int i = 10; i <= 100; i+=10) {   //brightening
     dimmer(50, i);
   }
-  for(int i = 100; i >= 10; i-=10) {
+  for(int i = 100; i >= 10; i-=10) {   //dimming
     dimmer(50, i);
   }
 }
